@@ -43,7 +43,7 @@
 					<!-- Logo
 					============================================= -->
 				<!-- <div class="col_one_sixth"> -->
-					<div id="logo">
+					<div id="logo" style="margin-right: 0px !important;" >
 						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-light.png"><img src="images/logo-dark.png" alt="Canvas Logo"></a>
 						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-light.png"><img src="images/logo-dark.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
@@ -60,7 +60,24 @@
 								.callus2 {
 									display: block !important;
 								}
+								.callus3 {
+									display: none !important;
+								}
 							}
+							@media only screen and (max-width: 1008px) {
+								.callus {
+									display: none !important;
+								}
+								.callus2 {
+									display: none !important;
+								}
+								.callus3 {
+									display: block !important;
+								}
+
+							}
+
+
 							@media only screen and (max-width: 767px) {
 								.mhide {
 									display: none !important;
@@ -79,21 +96,25 @@
 								.fbox-icon {
 									padding-left: 8vw !important;
 								}
+								.callnow {
+									min-height: 20px !important;
+								}
 
 							}
 						</style>
 						<ul class="callnow" style="min-height: 100px;">
-							<li class="current"><a href="index.html"><div class="callus" style="font-size: 1.1rem;">CALL: (225) 928-8800 (SE HABLA ESPAñOL)</div></a>
+							<li class=" callus"><a href="index.html"><div class="" style="font-size: 1.1rem;">CALL: (225) 928-8800 (SE HABLA ESPAñOL)</div></a>
 								
 							</li>
-							<li class="current"><a href="index.html"><div class="callus2" style="display: none; font-size: 1.5rem;">(225) 928-8800</div></a>
+							<li style="display: none;" class=" callus2"><a href="index.html"><div class="" style="font-size: 1.5rem;">(225) 928-8800</div></a>
+							<li  style="display: none;" class=" callus3"><a href="index.html"><div class="" style="font-size: 1.0rem;">(225) 928-8800</div></a>
 								
 							</li>
 						</ul>
 						
 						<ul style="min-height: 100px;">
 							
-							<li class="current"><a href="index.html"><div>Home</div></a>
+							<li ><a href="index.html"><div>Home</div></a>
 								<ul>
 									<li><a href="index-corporate.html"><div>Home - Corporate</div></a>
 										<ul>
@@ -438,7 +459,7 @@
 								</div>
 							</li>
 							
-							<li class="mega-menu"><a href="blog.html"><div>Blog</div></a>
+							<li class="mega-menu current"><a href="blog.html"><div>Blog</div></a>
 								<div class="mega-menu-content style-2 clearfix">
 									<ul class="mega-menu-column col-lg-3">
 										<li class="mega-menu-title"><a href="#"><div>Default</div></a>
