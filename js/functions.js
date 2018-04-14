@@ -2732,7 +2732,7 @@ var SEMICOLON = SEMICOLON || {};
 						instaGramSortBy = element.attr('data-sortBy'),
 						instaGramRes = element.attr('data-resolution');
 
-					if( !instaGramCount ) { instaGramCount = 9; }
+					if( !instaGramCount ) { instaGramCount = 1; }
 					if( !instaGramSortBy ) { instaGramSortBy = 'none'; }
 					if( !instaGramRes ) { instaGramRes = 'thumbnail'; }
 

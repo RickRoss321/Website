@@ -32,9 +32,9 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class=" full-header" data-sticky-class="">
+		<header id="header" class="force-not-dark transparent-header full-header " data-sticky-class="not-dark">
 
-			<div id="header-wrap" class="">
+			<div id="header-wrap" class="header-anim">
 
 				<div style="" class="container clearfix">
 
@@ -43,7 +43,7 @@
 					<!-- Logo
 					============================================= -->
 				<!-- <div class="col_one_sixth"> -->
-					<div id="logo" style="margin-right: 0px !important;" >
+					<div id="logo" style="margin-right: 0px !important;">
 						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-light.png"><img src="images/logo-dark.png" alt="Canvas Logo"></a>
 						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-light.png"><img src="images/logo-dark.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
@@ -53,7 +53,21 @@
 					============================================= -->
 					<nav style="" id="primary-menu" class="not-dark">
 						<style type="text/css">
-							@media only screen and (max-width: 1220px) {
+							
+							@media only screen and (max-width: 1335px) {
+
+								.callHeader {
+									font-size: 1.3rem !important;
+								}
+							}
+							@media only screen and (max-width: 1269px) {
+
+								.callHeader {
+									font-size: 1.1rem !important;
+								}
+							}
+
+							@media only screen and (max-width: 1205px) {
 								.callus {
 									display: none !important;
 								}
@@ -103,18 +117,20 @@
 							}
 						</style>
 						<ul class="callnow" style="min-height: 100px;">
-							<li class=" callus"><a href="index.html"><div class="" style="font-size: 1.1rem;">CALL: (225) 928-8800 (SE HABLA ESPAñOL)</div></a>
+							<li class=" callus"><a href="index.html"><div style="font-size: 1.5rem;"  class="callHeader" style="">CALL: (225) 928-8800 (SE HABLA ESPAñOL)</div></a>
 								
 							</li>
 							<li style="display: none;" class=" callus2"><a href="index.html"><div class="" style="font-size: 1.5rem;">(225) 928-8800</div></a>
 							<li  style="display: none;" class=" callus3"><a href="index.html"><div class="" style="font-size: 1.0rem;">(225) 928-8800</div></a>
 								
 							</li>
+
+							</li>
 						</ul>
-						
+
 						<ul style="min-height: 100px;">
-							
-							<li ><a href="index.html"><div>Home</div></a>
+
+							<li class="current"><a href="index.html"><div>Home</div></a>
 								<ul>
 									<li><a href="index-corporate.html"><div>Home - Corporate</div></a>
 										<ul>
@@ -183,7 +199,7 @@
 									<li><a href="index-boxed.html"><div>Home - Boxed Layout</div></a></li>
 								</ul>
 							</li>
-							<li><a href="#"><div>About</div></a>
+							<li><a href="team.html"><div>About</div></a>
 								<ul>
 									<li><a href="#"><div><i class="icon-stack"></i>Sliders</div></a>
 										<ul>
@@ -458,7 +474,7 @@
 									</ul>
 								</div>
 							</li>
-							
+
 							<li class="mega-menu"><a href="blog.html"><div>Blog</div></a>
 								<div class="mega-menu-content style-2 clearfix">
 									<ul class="mega-menu-column col-lg-3">
@@ -537,18 +553,19 @@
 										<li>
 											<div class="widget d-none d-lg-block clearfix">
 
-												<h4>Our Location</h4>
+												<h4 style="color:#555" >Our Location</h4>
+												<iframe src="https://maps.google.com/maps?q=Murphy Law Firm&t=&z=15&ie=UTF8&iwloc=&output=embed" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-												<div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Murphy Law Firm&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.crocothemes.net"></a><style>.mapouter{overflow:hidden;height:200px;width:300px;}.gmap_canvas {background:none!important;height:200px;width:300px;}</style></div>
-
+												<!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Murphy Law Firm&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.crocothemes.net"></a><style>.mapouter{overflow:hidden;height:200px;width:300px;}.gmap_canvas {background:none!important;height:200px;width:300px;}</style></div>
+ -->
 											</div>
 										</li>
 									</ul>
 									<ul class="mega-menu-column col-lg-6">
 										<li>
-											<div class="widget clearfix">
+											<div style="color:#555"  class="widget clearfix">
 
-												<h4>Send us a Quick Email</h4>
+												<h4 style="color:#555" >Send us a Quick Email</h4>
 
 												<div class="contact-widget" data-loader="button">
 													<div class="contact-form-result"></div>
@@ -592,21 +609,21 @@
 									</ul>
 									<ul class="mega-menu-column col-lg-3">
 										<li>
-											<div class="widget clearfix">
+											<div style="color:#555" class="widget clearfix">
 
-												<h4>Our Headquarters</h4>
+												<h4 style="color:#555">Our Headquarters</h4>
 
 												<address>
 													<strong>Murphy Law Firm, LLC</strong><br>
 													2354 S Acadian Thruway<br>
 													Baton Rouge, Louisiana 70802<br>
-													
+
 												</address>
-												
+
 												<abbr title="Phone Number"><strong>Phone:</strong></abbr>  (225) 928-8800<br>
 												<abbr title="Email Address"><strong>Email:</strong></abbr> info@murphylawfirm.com <br>
 												<abbr title="Fax"><i class="icon-time color"></i><strong> Mon-Fri:</strong></abbr> 8AM to 5PM
-												
+
 
 												<div class="bottommargin-sm"></div>
 
@@ -640,9 +657,9 @@
 									</ul>
 								</div>
 							</li>
-							
-							
-							
+
+
+
 						</ul>
 
 						<!-- Top Cart
@@ -651,8 +668,8 @@
 
 						<!-- Top Search
 						============================================= -->
-						<div  id="top-search">
-							<a href="#" id="top-search-trigger"><i style="color: #0086B6;" class="icon-search3"></i><i class="icon-line-cross"></i></a>
+						<div id="top-search">
+							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
 							<form action="search.html" method="get">
 								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
 							</form>

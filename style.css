@@ -1164,7 +1164,7 @@ body.stretched #header.full-header .container {
 	font-size: 13px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
 	-webkit-transition: margin .4s ease, padding .4s ease;
 	-o-transition: margin .4s ease, padding .4s ease;
 	transition: margin .4s ease, padding .4s ease;
@@ -7054,16 +7054,16 @@ body:not(.device-touch) .button.button-full strong {
 	border-color: #53777A;
 }
 
-.button-yellow { background-color: #ECD078; }
+.button-yellow { background-color: #FEDB30; }
 .button-3d.button-yellow:hover,
 .button-reveal.button-yellow:hover,
 .button-border.button-yellow:hover,
-.button-border.button-yellow.button-fill:before { background-color: #ECD078 !important; }
+.button-border.button-yellow.button-fill:before { background-color: #FEDB30 !important; }
 
 .button-border.button-yellow,
 .button-border.button-yellow.button-fill.button-light:hover {
-	color: #ECD078 !important;
-	border-color: #ECD078 !important;
+	color: #FEDB30 !important;
+	border-color: #FEDB30 !important;
 }
 
 .button-border.button-yellow:hover,
