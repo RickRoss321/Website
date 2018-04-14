@@ -169,7 +169,7 @@ body {
 
 a {
 	text-decoration: none !important;
-	color: #1ABC9C;
+	color: #0686B6;
 }
 
 a:hover { color: #222; }
@@ -2225,7 +2225,7 @@ body.top-search-open #top-account { opacity: 0; }
 
 #page-menu-wrap {
 	z-index: 99;
-	background-color: #1ABC9C;
+	background-color: #0686B6;
 	-webkit-transform: translate3d(0,0,0);
 	-ms-transform: translate3d(0,0,0);
 	-o-transform: translate3d(0,0,0);
@@ -2250,7 +2250,7 @@ body.top-search-open #top-account { opacity: 0; }
 #header.no-sticky ~ #content #page-menu.sticky-page-menu #page-menu-wrap { top: 0; }
 
 #header.sticky-header ~ #page-menu.sticky-page-menu #page-menu-wrap,
-#header.sticky-header ~ #content #page-menu.sticky-page-menu #page-menu-wrap { top: 60px; }
+#header.sticky-header ~ #content #page-menu.sticky-page-menu #page-menu-wrap { top: 100px; }
 
 #page-submenu-trigger {
 	top: 0;
@@ -6579,7 +6579,7 @@ body:not(.device-sm):not(.device-xs) .countdown.countdown-large.coming-soon .cou
 	font-size: 14px;
 	height: 40px;
 	line-height: 40px;
-	background-color: #1ABC9C;
+	background-color: #0686B6;
 	color: #FFF;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -7637,7 +7637,7 @@ body:not(.device-touch) .button.button-full strong {
 .feature-box.fbox-plain .fbox-icon img {
 	border: none !important;
 	background-color: transparent !important;
-	color: #1ABC9C;
+	color: #0686B6;
 	border-radius: 0;
 }
 
