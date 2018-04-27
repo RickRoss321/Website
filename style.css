@@ -7521,7 +7521,7 @@ body:not(.device-touch) .button.button-full strong {
 -----------------------------------------------------------------*/
 
 .feature-box.fbox-outline .fbox-icon {
-	border: 1px solid #1ABC9C;
+	border: 1px solid #A71A1A;
 	border-radius: 50%;
 	padding: 3px;
 }
@@ -7589,7 +7589,7 @@ body:not(.device-touch) .button.button-full strong {
 -----------------------------------------------------------------*/
 
 .feature-box.fbox-border .fbox-icon {
-	border: 1px solid #1ABC9C;
+	border: 1px solid #A71A1A;
 	border-radius: 50%;
 }
 
@@ -7597,7 +7597,7 @@ body:not(.device-touch) .button.button-full strong {
 .feature-box.fbox-border .fbox-icon img {
 	border: none;
 	background-color: transparent !important;
-	color: #1ABC9C;
+	color: #A71A1A;
 }
 
 .feature-box.fbox-border .fbox-icon { padding: 0; }
