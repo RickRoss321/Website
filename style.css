@@ -164,7 +164,7 @@ dl, dt, dd, ol, ul, li {
 body {
 	line-height: 1.5;
 	color: #555;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -196,7 +196,7 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Libre Baskerville', serif;
 }
 
 h5,
@@ -3108,7 +3108,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	font-size: 4rem;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 400;
 	line-height: 1;
 	margin-bottom: 0;
 }
@@ -6603,7 +6603,7 @@ body:not(.device-touch) .button {
 }
 
 .button:hover {
-	background-color: #444;
+	/*background-color: #444;*/
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -6766,7 +6766,7 @@ body:not(.device-touch) .button {
 }
 
 .button.button-3d:hover {
-	background-color: #1ABC9C !important;
+	background-color: #1ABC9C ;
 	opacity: 0.9;
 }
 

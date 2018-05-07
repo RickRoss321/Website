@@ -8,6 +8,11 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
@@ -23,6 +28,8 @@
 <link rel="stylesheet" type="text/css" href="slick.css"/>
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+<!-- <link href="https://fonts.googleapis.com/css?family=Cardo|Josefin+Sans" rel="stylesheet"> -->
+
 
 
 
@@ -103,7 +110,15 @@
 								}
 
 							}
-
+							@media only screen and (max-width: 994px) {
+								.feature-box > p {
+									display: none;
+									/*font-size: 2rem;*/
+								}
+								.feature-box > h3 {
+									font-size: 14px ;									/*font-size: 2rem;*/
+								}
+							}
 
 							@media only screen and (max-width: 767px) {
 								.mhide {
@@ -121,6 +136,8 @@
 	
 									}
 								.fbox-icon {
+									border: none !important;
+									top: -22px !important;
 									/*padding-left: 8vw !important;*/
 								}
 								.callnow {
@@ -146,54 +163,10 @@
 							<li class="current"><a href="index.html"><div>Home</div></a>
 								
 							</li>
-							<li><a href="team.html"><div>About</div></a>
+							<li><a href="about.html"><div>About</div></a>
 								<ul>
-									<li><a href="#"><div><i class="icon-stack"></i>Sliders</div></a>
-										<ul>
-											<li><a href="slider-revolution.html"><div>Revolution Slider</div></a>
-												<ul>
-													<li><a href="rs-demo-premium-concept.html"><div>Premium Templates</div></a></li>
-													<li><a href="slider-revolution.html"><div>Full Screen</div></a></li>
-													<li><a href="slider-revolution-fullwidth.html"><div>Full Width</div></a></li>
-													<li><a href="slider-revolution-kenburns.html"><div>Kenburns Effect</div></a></li>
-													<li><a href="slider-revolution-html5-videos.html"><div>HTML5 Video</div></a></li>
-												</ul>
-											</li>
-											<li><a href="slider-canvas.html"><div>Canvas Slider</div></a>
-												<ul>
-													<li><a href="slider-canvas.html"><div>Full Width</div></a></li>
-													<li><a href="slider-canvas-fade.html"><div>Fade Transition</div></a></li>
-													<li><a href="slider-canvas-autoplay.html"><div>Autoplay Feature</div></a></li>
-													<li><a href="slider-canvas-video-event.html"><div>Custom Video Event</div></a></li>
-													<li><a href="slider-canvas-pagination.html"><div>Pagination Navigation</div></a></li>
-													<li><a href="slider-canvas-3.html"><div>3 Columns</div></a></li>
-													<li><a href="slider-canvas-4.html"><div>4 Columns</div></a></li>
-													<li><a href="slider-canvas-5.html"><div>5 Columns</div></a></li>
-												</ul>
-											</li>
-											<li><a href="slider-flex.html"><div>Flex Slider</div></a>
-												<ul>
-													<li><a href="slider-flex.html"><div>Default Layout</div></a></li>
-													<li><a href="slider-flex-thumbs.html"><div>with Thumbs</div></a></li>
-												</ul>
-											</li>
-											<li><a href="slider-owl.html"><div>Owl Slider</div></a>
-												<ul>
-													<li><a href="slider-owl-full.html"><div>Full Width</div></a></li>
-													<li><a href="slider-owl.html"><div>Boxed Width</div></a></li>
-													<li><a href="slider-owl-videos.html"><div>Video Slider</div></a></li>
-												</ul>
-											</li>
-											<li><a href="static-parallax.html"><div>Static Media</div></a>
-												<ul>
-													<li><a href="static-parallax.html"><div>Static - Parallax</div></a></li>
-													<li><a href="static-image.html"><div>Static - Image</div></a></li>
-													<li><a href="static-thumbs-grid.html"><div>Static - Thumb Gallery</div></a></li>
-													<li><a href="static-html5-video.html"><div>Static - HTML5 Video</div></a></li>
-													<li><a href="static-embed-video.html"><div>Static - Embedded Video</div></a></li>
-												</ul>
-											</li>
-										</ul>
+									<li><a href="team.html"><div><i class="icon-stack"></i>Team</div></a>
+										
 									</li>
 									<li><a href="widgets.html"><div><i class="icon-gift"></i>Widgets</div></a>
 										<ul>
@@ -551,11 +524,11 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide dark" style="background-image: url('Image01.jpg');">
 							<div class="container clearfix" style="">
-								<div style="max-width: 1000px;" class="slider-caption slider-caption-center">
+								<div class="slider-caption slider-caption-center" style="max-width: 1200px;">
 									<h2  style="" data-caption-animate="fadeInUp">Don't Be A Victim Twice</h2>
 									<p class="numberfix" data-caption-animate="fadeInUp" data-caption-delay="200">Let us protect your rights.<br>  Call Us Now: <a style=" color: inherit;" href="tel:+1-225-928-8800">(225) 928-8800</a></p>
 
-									<h2 class=".d-block d-md-none" data-caption-animate="fadeInUp"><a href="contact.html" class="button button-border button-white button-light button-large button-rounded button-reveal tright nomargin"><i class="icon-angle-right"></i>Get a Free Consultation</a></h2>
+									<h2 class=".d-block d-md-none" data-caption-animate="fadeInUp"><a style="font-size: 14px;" href="contact.html" class="button button-border button-white button-light button-large button-rounded button-reveal tright nomargin"><i class="icon-angle-right" ></i>Get a Free Consultation</a></h2>
 									<h2 class="mhide"  data-caption-animate="fadeInUp"><a style="font-size: 16px !important;" href="contact.html" class="button button-border button-white button-light button-reveal button-large button-rounded tright nomargin"><i class="icon-angle-right"></i><span>Get Your Free Consultation</span></a></h2>
 									<br>
 
@@ -620,7 +593,7 @@ i.icon-line-play {
 }
 
 i.fa {
-	color: #A71A1A !important;
+	/*color: #A71A1A !important;*/
 }i.iconred {
 	color: #A71A1A !important;
 }
@@ -648,8 +621,8 @@ i.fa {
 						</div>
 
 				<div class="container clearfix" style="padding-bottom: 50px;">
-					<div id="slickin" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-				<div > 
+					<div id="slickin" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, }'>
+				<div class=""  style="padding: 25px 25px 25px 25px;"> 
 					<div class="col_one_third">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
@@ -716,7 +689,7 @@ i.fa {
 					<div class="col_one_third nobottommargin">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="icon-medical-i-outpatient iconred"></i></a>
+								<a href="#"><i class="icon-medical-i-outpatient "></i></a>
 							</div>
 							<h3>Pedestrian Accidents</h3>
 							<p>Canvas included 20+ custom designed Slider Pages with Premium Sliders like Layer, Revolution, Swiper &amp; others.</p>
@@ -745,13 +718,13 @@ i.fa {
 
 					<div class="clear"></div>
 				</div>
-				<div > 
+				<div style="padding: 25px 25px 0px 25px;"> 
 					<div class="col_one_third">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
-								<i class="fa fa-car"></i>
+								<i class="fa fa-ship"></i>
 							</div>
-							<h3>Car Accidents</h3>
+							<h3>Boating Accidents</h3>
 							<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
 						</div>
 					</div>
@@ -759,9 +732,9 @@ i.fa {
 					<div class="col_one_third">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="fa fa-truck"></i></a>
+								<a href="#"><i class="fa fa-building"></i></a>
 							</div>
-							<h3>Truck Accidents</h3>
+							<h3>Premises Liability</h3>
 							<p>Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all others graphics are optimized.</p>
 						</div>
 					</div>
@@ -769,9 +742,9 @@ i.fa {
 					<div class="col_one_third col_last">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="fa fa-motorcycle"></i></a>
+								<a href="#"><i class="icon-medical-i-ambulance"></i></a>
 							</div>
-							<h3>Motorcyle Accidents</h3>
+							<h3>Personal Injury</h3>
 							<p>Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
 						</div>
 					</div>
@@ -780,9 +753,9 @@ i.fa {
 					<div class="col_one_third">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="fa fa-medkit"></i></a>
+								<a href="#"><i class="fa fa-bolt"></i></a>
 							</div>
-							<h3>Medical Malpractice</h3>
+							<h3>Offshore Injuries</h3>
 							<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
 						</div>
 					</div>
@@ -790,9 +763,9 @@ i.fa {
 					<div class="col_one_third">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="fa fa-stethoscope"></i></a>
+								<a href="#"><i class="fa fa-balance-scale"></i></a>
 							</div>
-							<h3>Mesothelioma &amp; Asbestos</h3>
+							<h3>Class Action &amp; Mass Tort</h3>
 							<p>Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all others graphics are optimized.</p>
 						</div>
 					</div>
@@ -800,9 +773,9 @@ i.fa {
 					<div class="col_one_third col_last">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="fa fa-exclamation-triangle"></i></a>
+								<a href="#"><i class="fa fa-wrench"></i></a>
 							</div>
-							<h3>Defective Products</h3>
+							<h3>Construction Accidents</h3>
 							<p>Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
 						</div>
 					</div>
@@ -812,9 +785,9 @@ i.fa {
 					<div class="col_one_third nobottommargin">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="icon-medical-i-outpatient iconred"></i></a>
+								<a href="#"><i class="icon-medical-i-medical-records "></i></a>
 							</div>
-							<h3>Pedestrian Accidents</h3>
+							<h3>Social Security Disability</h3>
 							<p>Canvas included 20+ custom designed Slider Pages with Premium Sliders like Layer, Revolution, Swiper &amp; others.</p>
 						</div>
 					</div>
@@ -822,9 +795,9 @@ i.fa {
 					<div class="col_one_third nobottommargin">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="fa fa-life-buoy"></i></a>
+								<a href="#"><i class="icon-pill"></i></a>
 							</div>
-							<h3>Maritime Accidents</h3>
+							<h3>Dangerous Drugs</h3>
 							<p>Change the color scheme of the Theme in a flash just by changing the 6-digit HEX code in the colors.php file.</p>
 						</div>
 					</div>
@@ -832,9 +805,9 @@ i.fa {
 					<div class="col_one_third nobottommargin col_last">
 						<div class="feature-box fbox-border fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="fa fa-money"></i></a>
+								<a href="#"><i class="icon-medical-i-surgery"></i></a>
 							</div>
-							<h3>Workers' Compensation</h3>
+							<h3>Wrongful Death</h3>
 							<p>Use any Font you like from Google Web Fonts, Typekit or other Web Fonts. They will blend in perfectly.</p>
 						</div>
 					</div>
@@ -1002,15 +975,15 @@ i.fa {
 					$(".mhide3").removeClass("mhide3");
 				}
 			</script>
-			<div   class="section notopmargin notoppadding notopborder nobg noborder  nobottommargin" style="padding-bottom: 30px !important;" >
+			<div   class="section notopmargin notoppadding notopborder nobg noborder  nobottommargin" style="" >
 
 					<div class="container clearfix">
 
 						<div class="heading-block nobottomborder  nobottommargin">
 							<h2 class="mhide" style="text-align: center;"><a href="contact.html" class="button button-rounded button-reveal button-large button-red tright"><i class="icon-angle-right"></i><span>Get Your Free Consultation</span></a></h2>
-							<h2 class=".d-block d-md-none mhide2" style="text-align: center;"><a onclick="hide()" class="button button-rounded button-reveal button-small button-white tright"><i class="icon-angle-left"></i><span>Hide</span></a></h2>
-							<h2 class=".d-block d-md-none sM" style="text-align: center;"><a onclick="seeMore()" class="button button-rounded button-reveal button-small button-white tright"><i class="icon-angle-right"></i><span>See More</span></a></h2>
-							<h2 class=".d-block d-md-none" style="text-align: center;"><a href="contact.html" class="button button-rounded button-reveal button-large button-red tright"><i class="icon-angle-right"></i><span>Get A Free Consultation</span></a></h2>
+							<!-- <h2 class=".d-block d-md-none mhide2" style="text-align: center;"><a onclick="hide()" class="button button-rounded button-reveal button-small button-white tright"><i class="icon-angle-left"></i><span>Hide</span></a></h2> -->
+							<!-- <h2 class=".d-block d-md-none sM" style="text-align: center;"><a onclick="seeMore()" class="button button-rounded button-reveal button-small button-white tright"><i class="icon-angle-right"></i><span>See More</span></a></h2> -->
+							<h2 class=".d-block d-md-none" style="text-align: center;"><a style="font-size: 14px;" href="contact.html" class="button button-rounded button-reveal button-large button-red tright"><i class="icon-angle-right"></i><span>Get A Free Consultation</span></a></h2>
 
 						</div>
 
@@ -1019,11 +992,11 @@ i.fa {
 				</div>
 				<div class="section nopadding notopmargin nobg clearfix" style=" border-top: 1px solid #EEE; border-bottom: 1px solid #EEE;">
 					<div style="background-color: #101930;" class="row common-height clearfix">
-						<div class="col-lg-6 center col-padding" style="max-height: 500px; background: url('peyton.jpg') center center no-repeat; background-size: cover;">
+						<div class="col-lg-5 center col-padding" style="max-height: 500px; background: url('peyton.jpg') center center no-repeat; background-size: cover;">
 							<div>&nbsp;</div>
 						</div>
 
-						<div style="background-color: #101930; height: 500px !important; margin-top: 20px; margin-bottom: 15px;" class="col-lg-6 col-padding nobottompadding notoppadding">
+						<div style="background-color: #101930; height: 500px !important; margin-top: 20px; margin-bottom: 15px;" class="col-lg-7 col-padding nobottompadding notoppadding">
 							<div>
 								<div style="position: relative;">
 									<div class="heading-block noborder bottommargin-sm" data-heading="A">
@@ -1033,7 +1006,7 @@ i.fa {
 								<style type="text/css">
 								@media only screen and (max-width: 1412px) {
 									.ourFirmList {
-										font-size: 1.3rem !important;
+										font-size: 1.25rem !important;
 									}
 
 								}
@@ -1240,11 +1213,14 @@ i.fa {
 						<h3>A <span style="color: #0686B6">Personal Commitment</span> to Community</h3>
 						<span>We are proud to be partnered with the below organizations and to take an active role in supporting the residents of our community.</span>
 					</div>
-					<div id="slicker" data-slick='{  "dots": true, "infinite": true,
+					<div id="slicker" data-slick='{   
+  "infinite": true,
   "speed": 300,
-  "slidesToShow": 1,
+  "slidesToShow": 1,	
   "centerMode": true,
-  "variableWidth": true}'>
+  "variableWidth": true,
+"autoplay": true,
+"autoplaySpeed": 1500}'>
   <div><img src="logos/AmericanCancerSociety.png" alt="AmericanCancerSociety"></div>
   <div><img src="logos/BellaBowman.jpg" alt="BellaBowman"></div>
   <div><img src="logos/RelayForLife.jpg" alt="Mac Sunglasses"></div>
@@ -1398,7 +1374,11 @@ i.fa {
 					</div>
 				</div> -->
 
-				
+				<style type="text/css">
+					.footer-stick:hover {
+						background-color: #444;
+					}
+				</style>
 				<div   class="section notopmargin  noborder  nobottommargin nobottompadding" style="padding-top: 40px;" >
 					<a href="#" class="button button-full center tright footer-stick">
 					<div class="container clearfix" style="min-height: 100px;">
@@ -1794,7 +1774,7 @@ var mapOptions = {
     rotateControl: true,
     fullscreenControl: true
 }
-var contentString = '<div style="background-color: white; "  id="content">'+
+var contentString = '<div style="background-color: white; "  id="contents">'+
       '<div style="width: 400px;"><h4 style="margin-bottom: 8px; margin-top: 10px; text-align: center; font-size: 22px; font-weight: 600; text-transform: none; font-family: Raleway, sans-serif; "><a href="https://goo.gl/maps/XfEFnnRbWAr" style"color:#0086B6 !important; ">Click Here for Directions to <br><span>Murphy Law Firm</span></h4></a></div></div>';
 
         var infowindow = new google.maps.InfoWindow({
@@ -1828,7 +1808,7 @@ var mapOptions = {
     rotateControl: true,
     fullscreenControl: true
 }
-var contentString = '<div style="background-color: white; "  id="content">'+
+var contentString = '<div style="background-color: white; "  id="contents">'+
       '<div style="width: 240px;"><h4 style="margin-bottom: 8px; margin-top: 10px; text-align: center; font-size: 16px; font-weight: 600; text-transform: none; font-family: Raleway, sans-serif; "><a href="https://goo.gl/maps/XfEFnnRbWAr" style"color:#0086B6 !important; ">Click Here for Directions to <span>Murphy Law Firm</span></h4></a></div></div>';
 
         var infowindow = new google.maps.InfoWindow({
