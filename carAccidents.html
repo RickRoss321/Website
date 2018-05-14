@@ -58,6 +58,22 @@
 					============================================= -->
 					<nav style="" id="primary-menu" class="not-dark">
 						<style type="text/css">
+
+					.chart-samples ul { list-style: none; }
+
+.chart-samples h4 {
+text-transform: uppercase;
+margin-bottom: 20px;
+font-weight: 400;
+}
+
+.chart-samples li {
+font-size: 16px;
+line-height: 2.2;
+font-weight: 600;
+}
+
+.chart-samples li a:not(:hover) { color: #AAA; }
 							
 							@media only screen and (max-width: 1335px) {
 
@@ -703,8 +719,11 @@
 						</div>
 					</div>
 
-						
-						
+
+
+						<div class="bottommargin divcenter" style="max-width: 750px; min-height: 350px;">
+						<canvas id="chart-0"></canvas>
+					</div>
 
 					<div class="nobottommargin">
 
@@ -950,7 +969,57 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
-		<script>
+		
+			<!-- Charts JS
+	============================================= -->
+	<script src="js/chart.js"></script>
+	<script src="js/chart-utils.js"></script>
+
+	<script>
+
+		var barChartData = {
+			labels: ["2013", "2014", "2015", "2016", "2017"],
+			datasets: [{
+				label: 'Baton Rouge',
+				backgroundColor: window.chartColors.red,
+				data: [
+					31000, 32000, 35000, 39000, 37000
+				]
+			}, {
+				label: 'Dataset 2',
+				backgroundColor: window.chartColors.blue,
+				data: [
+					180000, 184000, 198000, 204000, 193000
+				]
+			}, ]
+
+		};
+		window.onload = function() {
+			var ctx = document.getElementById("chart-0").getContext("2d");
+			window.myBar = new Chart(ctx, {
+				type: 'bar',
+				data: barChartData,
+				options: {
+					title:{
+						display:true,
+						text:"Bar Chart - Stacked"
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: false
+					},
+					responsive: true,
+					scales: {
+						xAxes: [{
+							stacked: true,
+						}],
+						yAxes: [{
+							stacked: false
+						}]
+					}
+				}
+			});
+		};
 
 function myMap() {
 	var myLatLng = new google.maps.LatLng(30.4251602,-91.1535539);
