@@ -818,6 +818,31 @@ font-weight: 600;
 									$('.acctitle').eq(0).trigger('click');
 	console.log("shoulda clicked");
 									console.log("and this");
+									var ctx = document.getElementById("chart-0").getContext("2d");
+			window.myBar = new Chart(ctx, {
+				type: 'bar',
+				data: barChartData,
+				options: {
+					title:{
+						display:true,
+						text:"Bar Chart - Stacked"
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: false
+					},
+					responsive: true,
+					scales: {
+						xAxes: [{
+							stacked: true,
+						}],
+						yAxes: [{
+							stacked: false
+						}]
+					}
+				}
+			});
+		
 								}
 							</script>
 
@@ -994,32 +1019,8 @@ font-weight: 600;
 			}, ]
 
 		};
-		window.onload = function() {
-			var ctx = document.getElementById("chart-0").getContext("2d");
-			window.myBar = new Chart(ctx, {
-				type: 'bar',
-				data: barChartData,
-				options: {
-					title:{
-						display:true,
-						text:"Bar Chart - Stacked"
-					},
-					tooltips: {
-						mode: 'index',
-						intersect: false
-					},
-					responsive: true,
-					scales: {
-						xAxes: [{
-							stacked: true,
-						}],
-						yAxes: [{
-							stacked: false
-						}]
-					}
-				}
-			});
-		};
+		// window.onload = function() {
+			// };
 
 function myMap() {
 	var myLatLng = new google.maps.LatLng(30.4251602,-91.1535539);
