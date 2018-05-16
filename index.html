@@ -107,6 +107,9 @@
 								.callus3 {
 									display: none !important;
 								}
+								.helpline {
+									top: -20px !important;
+								}
 							}
 							@media only screen and (max-width: 1032px) {
 								.callus {
@@ -131,6 +134,21 @@
 								.attorneyNames {
 									font-size: .8rem !important;
 								}
+							}
+							@media only screen and (max-width: 992px) {
+								.helpline{
+									top: 20px !important;
+									/*left:200px !important;*/
+									padding-bottom: 20px !important;
+								}
+								.helplinetext{
+									position: absolute;
+									width: 200px;
+									top:-20px;
+									left: 170px !important;
+
+								}
+
 							}
 
 							@media only screen and (max-width: 767px) {
@@ -173,14 +191,18 @@
 							}
 						</style>
 						<ul class="callnow" style="min-height: 100px;">
-							<li class=" callus"><a href="index.html" style="max-height: 100px;"><div style="font-size: 2rem;"  class="" style="">(225) 928-8800 <div style="display: inline; font-size: .7rem"> &nbsp;&nbsp;&nbsp;(SE HABLA ESPAñOL)</div> </div></a>
-								
-							</li>
-							<li style="display: none;" class=" callus2"><a href="index.html"><div class="" style="font-size: 1.8rem;">(225) 928-8800</div></a>
-							<li  style="display: none;" class=" callus3"><a href="index.html"><div class="" style="font-size: 1.2rem;">(225) 928-8800</div></a>
+							<li class=" callus"><a href="index.html" style="max-height: 100px;"><div style="font-size: 2rem;"  class="" style="">(225) 928-8800 <div style="display: inline; font-size: .7rem"> &nbsp;&nbsp;&nbsp;(SE HABLA ESPAñOL)</div>  </div></a>
 								
 							</li>
 
+							<li style="display: none;" class=" callus2"><a href="index.html"><div class="" style="font-size: 1.8rem;">(225) 928-8800</div></a></li>
+							<li  style="display: none;" class=" callus3"><a href="index.html"><div class="" style="font-size: 1.2rem;">(225) 928-8800</div></a>
+								
+							
+
+							</li>
+							<li class="helpline"><a href="index.html" style="max-height: 100px; position: absolute; width: 180px; top: -10px; left: -160px;"><div class="helplinetext" style=" font-size: .7rem"> 24/7 Legal Helpline</div></a>
+								
 							</li>
 						</ul>
 
