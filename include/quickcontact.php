@@ -8,12 +8,12 @@ require 'phpmailer/src/SMTP.php';
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'username@website.com', // Your Email Address
-				'name' => 'Your Name' // Your Name
+				'email' => 'db10101@gmail.com', // Your Email Address
+				'name' => 'Dylan Blanchard' // Your Name
 			);
 
 // Form Processing Messages
-$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+$message_success = 'We have <strong>successfully</strong> received your message and will get back to you as soon as possible.';
 
 // Add this only if you use reCaptcha with your Contact Forms
 $recaptcha_secret = ''; // Your reCaptcha Secret
