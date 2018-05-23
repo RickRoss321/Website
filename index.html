@@ -153,6 +153,9 @@
 							}
 
 							@media only screen and (max-width: 767px) {
+								.fbox-effect {
+
+								}
 								.mhide {
 									display: none !important;
 								}
@@ -1761,6 +1764,17 @@ function callMaps(){
 	myMap2();
 
 }
+
+$(function(){
+	if($(this).width() <770){
+    $('div').removeClass('fbox-effect')
+    }
+    else{
+    // $('div').removeClass('fbox-effect')
+    }
+
+
+})
 
 </script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ4pK1Yq9RzNvxQsKhtC7Ta7IJKOikHRA&callback=callMaps"></script>
