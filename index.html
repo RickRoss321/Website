@@ -231,7 +231,7 @@
 							
 								
 							</li>
-							<li><a href="about.html"><div>About</div></a>
+							<li ><a href="about.html"><div>About</div></a>
 								<ul>
 									<li><a href="team.html"><div><i class="icon-stack"></i>Team</div></a>
 										
@@ -296,7 +296,64 @@
 							<!-- <li class="mega-menu"><a href="blog.html"><div>Blog</div></a> -->
 								
 							</li>
-							<li ><a href="index.html"><div>Testimonials</div></a>
+							<li class="mega-menu" onmouseenter="playYoutube()"><a href="testimonials.html"><div >Testimonials</div></a>
+								<div class="mega-menu-content style-2 clearfix">
+									<ul class="mega-menu-column col-lg-6">
+										<li>
+											<div class="widget clearfix">
+
+												<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/DyUPsN3w1uA?rel=0?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+												<!-- <p class="topmargin-sm nobottommargin">Fully Widgetized Mega Menus with the Ability to add Multiple Mixed Columns and Variable Content. You can use Images, Videos, Embedded Maps or Carousels along with Fully Functional Forms.</p> -->
+
+											</div>
+										</li>
+									</ul>
+									
+									<ul class="mega-menu-column col-lg-2">
+										<li class="mega-menu-title"><a href="#"><div>Layout Grids</div></a>
+											<ul>
+												<li ><a href="#" onclick=""><div>Unmute</div></a></li>
+												<li><a href="full-width-wide.html"><div>Full Width - Wide</div></a></li>
+												<li><a href="right-sidebar.html"><div>Right Sidebar</div></a></li>
+												<li><a href="left-sidebar.html"><div>Left Sidebar</div></a></li>
+												<li><a href="both-sidebar.html"><div>Both Sidebar</div></a></li>
+												<li><a href="both-right-sidebar.html"><div>Both Right Sidebar</div></a></li>
+												<li><a href="both-left-sidebar.html"><div>Both Left Sidebar</div></a></li>
+												<li><a href="blank-page.html"><div>Blank Page</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-lg-4">
+										<li>
+											<div class="widget clearfix">
+
+												<h4>Login to your Account</h4>
+
+												<form id="login-form" name="login-form" class="nobottommargin" action="#" method="post">
+
+													<div class="col_full">
+														<label for="login-form-username">Username or Email:</label>
+														<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control" />
+													</div>
+
+													<div class="col_full">
+														<label for="login-form-password">Password:</label>
+														<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control" />
+													</div>
+
+													<div class="col_full nobottommargin">
+														<button class="button button-3d button-black nomargin" id="login-form-submit" name="login-form-submit" value="login">Login</button>
+														<a href="#" class="fright">Forgot Password?</a>
+													</div>
+
+												</form>
+
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
 							<li class="mega-menu"><a href="contact.html"><div>Contact</div></a>
 								<div class="mega-menu-content style-2 clearfix">
 									<ul class="mega-menu-column col-lg-3">
@@ -306,8 +363,7 @@
 												<h4 style="color:#555" >Our Location</h4>
 												<div id="goomap" style="margin: auto; width:100%;height:240px;background:yellow"></div>
 
-												<!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Murphy Law Firm&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.crocothemes.net"></a><style>.mapouter{overflow:hidden;height:200px;width:300px;}.gmap_canvas {background:none!important;height:200px;width:300px;}</style></div>
- -->
+												
 											</div>
 										</li>
 									</ul>
@@ -1783,6 +1839,17 @@ $(function(){
 
 
 })
+var x = 0;
+function playYoutube(){
+	if(0==0){
+		$("#video")[0].src += "&mute=1&autoplay=1";
+		// ev.preventDefault();
+	console.log("tried to play youtube");
+	x=1;
+	}
+	
+}
+
 
 </script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ4pK1Yq9RzNvxQsKhtC7Ta7IJKOikHRA&callback=callMaps"></script>
