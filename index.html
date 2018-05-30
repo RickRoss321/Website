@@ -73,6 +73,18 @@
 					============================================= -->
 					<nav style="" id="primary-menu" class="not-dark">
 						<style type="text/css">
+						.ngageMobileFloat {
+							display: none !important;
+						}
+						.liveChatFloatingButton {
+							/*background-color: #0086B6;*/
+							font-family: 'Libre Baskerville', serif;
+							/*display: none !important;*/
+						}
+						.liveChatFloatingButton::after {
+							display: none;
+						}
+
 						.wobble {
 								  -webkit-animation-duration: 1s;
 								  
@@ -1725,7 +1737,7 @@ h3 > a {color: black;}
 
 	<!-- Go To Top
 	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
+	<div id="gotoTop" onclick="StartNgageChat();" class="icon-chat-3"></div>
 
 	<!-- External JavaScripts
 	============================================= -->
@@ -1739,6 +1751,9 @@ h3 > a {color: black;}
 	============================================= -->
 	<script src="js/functions.js"></script>
 	<script src="js/slick.js"></script>
+	<script src="ilnksrvr.aspx"></script>
+	<script src="GlobalScript.aspx"></script>
+	<script src="js/customNgageLibrary.js"></script>
 	<script type="text/javascript">
 	$('#slicker').slick({arrows:false,});
 	// $('#slickin').slick();
