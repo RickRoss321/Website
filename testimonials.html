@@ -423,16 +423,26 @@
 		============================================= -->
 		<section id="content">
 
-			<div class="content-wrap notoppadding">
-
-				<div class="section yt-bg-player notopmargin dark" data-quality="hd1080" data-autoplay="true" data-start="20"  data-stop="40" data-mute="true" data-volume="100" data-video="http://youtu.be/A3PDXmYoF5U" style="height: 200px !important;" >
-					<div class="container-fluid vertical-middle center clearfix">
-						<i class="i-plain i-large icon-line-video divcenter" data-animate="fadeInDown"></i>
-						<div class="emphasis-title nomargin" data-animate="fadeInUp">
-							<h2 style="font-size: 56px;">Section with Background Youtube Videos</h2>
+			<div class="content-wrap ">
+				<style type="text/css">
+					.inline-YTPlayer{
+						margin-left: auto;
+						margin-right: auto;
+					}
+					.i-plain {
+						font-size:42px !important;
+					}
+					
+				</style>
+				<div class="  divcenter bottommargin-sm" style="max-width: 75%;" >
+							<iframe id="video" width="460" height="315" src="https://www.youtube.com/embed/videoseries?list=PLAw6WO3pF--vr4etabg-Xxg0Sw_BjApD4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
 						</div>
-					</div>
-				</div>
+				
+				<!-- <i class="i-plain i-large icon-line-skip-back "  style="margin-top: 300px;"></i> -->
+
+				
+
+
 
 				<div class="container clearfix">
 					<!-- Portfolio Filter
@@ -803,6 +813,55 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+	<script type="text/javascript">
+					var muted = true;
+					var playing = true;
+					$('#yUnMute').css("display", "none");
+					$( document ).ready(function() {
+					    $('#yUnMute').css("display", "none");
+					    console.log('ran dis');
+					});
+					
+					function muteToggle() {
+						if(muted){
+							jQuery('#yPlayer').YTPUnmute();
+							
+							$('#yMute').css("display", "none");
+							$('#yUnMute').css("display", "block");
+
+							
+							muted = false;
+						}else {
+							$('#yUnMute').css("display", "none");
+							$("#yMute").css("display", "block");
+							jQuery('#yPlayer').YTPMute();
+							muted = true;
+						}
+
+
+					}
+					function playToggle() {
+						if(playing){
+							jQuery('#yPlayer').YTPPause();
+							
+							$('#yPause').css("display", "none");
+							$('#yPlay').css("display", "block");
+
+							
+							playing = false;
+						}else {
+							$('#yPlay').css("display", "none");
+							$("#yPause").css("display", "block");
+							jQuery('#yPlayer').YTPPlay();
+							playing = true;
+						}
+
+
+					}
+					// function playToggle{
+
+					// }
+				</script>
 		<script>
 function myMap() {
 	var myLatLng = new google.maps.LatLng(30.4251602,-91.1535539);

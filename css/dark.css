@@ -457,7 +457,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 }
 
 .dark .spost,
-.dark .mpost { border-top-color: rgba(255,255,255,0.1); }
+.dark .mpost {  }
 
 .dark .spost .entry-image a i,
 .dark .mpost .entry-image a i {
