@@ -7,10 +7,7 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i|Libre+Baskerville|Open+Sans" rel="stylesheet" type="text/css" />
 
 
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
@@ -41,6 +38,7 @@
 	<!-- Document Title
 	============================================= -->
 	<title>Murphy Law Firm - Baton Rouge Personal Injury Attorneys</title>
+	
 
 </head>
 
@@ -95,9 +93,7 @@
 								  -webkit-animation-iteration-count: infinite;
 								  -webkit-animation-delay: .75s;
 								}
-								abbr {
-									text-decoration: none !important;
-								}
+								
 							/*.noclick:hover {cursor:pointer;}*/
 
 							
@@ -402,7 +398,7 @@
 
 												</div>
 												<div class="col_full">
-															<a class="button button-3d button-small nobottommargin button-reveal tright topmargin-sm" href="testimonials.html"><i class="icon-angle-right" ></i><span>See all testimonials</span></a>
+															<a class="button button-3d button-small nobottommargin button-reveal tright topmargin-sm" href="testimonials.html"><i class="icon-angle-right" ></i><span style="color: white;">See all testimonials</span></a>
 														</div>
 
 											</div>
@@ -1118,7 +1114,12 @@ h3 > a {color: black;}
 						<div class="clear"></div>
 						<div id="instagram" class="widget clearfix">
 							<script type="text/javascript">
-								window.onload = function() {addInsta()}; 
+								window.onload = function() {addInsta();
+								document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_template', this);
+            });}; 
 								function addInsta() {
 									console.log("ran that ish");
 									$("#instagram").html("<h4 class='highlight-me'>Instagram Photos</h4><div id='instagram-photos' class='instagram-photos masonry-thumbs grid-4' data-user='5963538953' data-count='12' data-type='user'></div>");
@@ -1212,15 +1213,16 @@ h3 > a {color: black;}
 							<h4 class="">Quick Consult</h4>
 							</div>
 								<div class="quick-contact-form-result"></div>
-								<form id="quick-contact-form" name="quick-contact-form" action="include/quickcontact.php" method="post" class="quick-contact-form nobottommargin">
-									<div class="form-process"></div>
-
-									<input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Full Name" />
-									<input type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email Address" />
-									<textarea class="required sm-form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="4" cols="30" placeholder="Message"></textarea>
-									<input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
-									<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-small button-3d nomargin" value="submit">Send Email</button>
-								</form>
+								<form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="contact"></textarea>
+        <input type="submit" value="Send">
+    </form>
 
 							</div>
 
