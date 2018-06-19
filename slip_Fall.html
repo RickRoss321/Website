@@ -410,9 +410,7 @@
 		<section id="page-title" class="page-title-parallax page-title-dark page-title-video">
 
 			<div class="video-wrap">
-				<video poster="images/videos/explore.jpg" preload="auto" loop autoplay muted style="padding-top: 15vw;" id="videoHeader">
-					<source src='images/videos/street.mp4' type='video/mp4' />
-				</video>
+				<video autoplay loop muted class="video" poster="images/videoStills/street_Moment.jpg" id="herovideo" style="padding-top: 15vw;"></video>
 				<div class="video-overlay" style="background-color: rgba(0,0,0,.35);"></div>
 			</div>
 
@@ -733,6 +731,68 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+
+	<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        var breakpoint = 1024;
+
+        loadVideo();
+
+        // Pause when page is not in the foreground
+        $(window).blur(function() {
+            $('#herovideo')[0].pause();
+        });
+
+        // Play when page returns to the foreground
+        $(window).focus(function() {
+            if ($(document).width() > breakpoint) {
+                $('#herovideo')[0].play();
+            }
+        });
+
+        // Play video when page resizes
+        $(window).resize(function() {
+            loadVideo();
+        });
+
+        // Play when page returns from browser history button
+        window.onpopstate = function() {
+            if ($(document).width() > breakpoint) {
+                $('#herovideo')[0].play();
+            }
+        };
+
+        function loadVideo() {
+            var video = document.getElementById('herovideo');
+
+            // Remove existing source tags for mobile
+            if ($(document).width() < breakpoint + 1) {
+                while (video.firstChild) {
+                    video.removeChild(video.firstChild);
+                }
+            }
+
+            // Add source tags if not already present
+            if ($(document).width() > breakpoint) {
+                if (document.querySelectorAll("#herovideo > source").length < 1) {
+                    var source1 = document.createElement('source');
+
+                    source1.setAttribute('src', 'images/videos/street.mp4');
+                    source1.setAttribute('type', 'video/mp4');
+
+             
+
+                    video.appendChild(source1);
+                }
+
+                // Play the video
+                $('#herovideo')[0].play();
+            }
+        }
+    });
+</script>
 		<script>
 
 function myMap() {
