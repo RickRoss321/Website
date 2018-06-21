@@ -4497,7 +4497,7 @@ body:not(.device-touch):not(.device-sm):not(.device-xs) .portfolio-overlay {
 .portfolio-overlay a {
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 56%;
 	background-color: #F5F5F5;
 	width: 40px !important;
 	height: 40px !important;
