@@ -537,7 +537,7 @@
 							<span>Check out what real clients have to say about Murphy Law Firm</span>
 						</div>
 						<div class=" col_two_third bottommargin-sm" >
-							<iframe id="video" width="460" height="315" src="https://www.youtube.com/embed/DyUPsN3w1uA?rel=0?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe id="video2" width="460" height="315" src="https://www.youtube.com/embed/DyUPsN3w1uA?rel=0?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</div>
 						<div class="col_one_third col_last">
 							<div class="widget clearfix">
@@ -547,11 +547,11 @@
 												<div>
 													<div class="spost clearfix">
 														<div class="entry-image">
-															<a href="#" class="nobg"><img class="rounded-circle" src="images/magazine/small/2.jpg" alt=""></a>
+															<a onclick="changeYoutubeVideo2();" href="#!" class="nobg"><img class="rounded-circle" src="images/magazine/small/2.jpg" alt=""></a>
 														</div>
 														<div class="entry-c">
 															<div class="entry-title">
-																<h4 ><a href="#" style="color:#FFF">"If there was a way to give 10 stars I would. The people at Murphy Law Firm are rockstars..."</a></h4>
+																<h4 ><a onclick="changeYoutubeVideo2();" href="#!" style="color:#FFF">"If there was a way to give 10 stars I would. The people at Murphy Law Firm are rockstars..."</a></h4>
 															</div>
 															<ul class="entry-meta">
 																<li><i class="icon-comments-alt"></i> MILLICENT CARTER</li>
@@ -797,8 +797,8 @@
 				<div class="container clearfix">
 
 					<div class="col_half">
-						Copyrights &copy; 2018 All Rights Reserved by Murphy Law Firm.<br>
-						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+						Created by Dylan Blanchard &amp; John Adams <br>&copy; 2018 All Rights Reserved by Murphy Law Firm.<br>
+						<div class="copyright-links"><a href="disclaimer.html">Disclaimer</a> / <a href="privacyPolicy.html">Privacy Policy</a></div>
 					</div>
 
 					<div class="col_half col_last tright">
@@ -980,6 +980,12 @@ function callMaps(){
 
 	$("#videoHeader").css("top", "-10px")
 	console.log("tried to resize;");
+}
+
+function changeYoutubeVideo2(){
+	$("#video2")[0].src = "https://www.youtube.com/embed/2df6wEY7ie8?rel=0?enablejsapi=1";
+	$("#video2")[0].src += "&autoplay=1";
+	console.log("tried to change youtube");
 }
 
 </script>

@@ -3464,11 +3464,21 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	border-bottom: none;
 }
 
+
 #page-title.page-title-parallax h1 {
 	font-size: 40px;
 	font-weight: 600;
 	letter-spacing: 2px;
 }
+@media only screen and (max-width: 490px) {
+	#page-title.page-title-parallax h1 {
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+}
+
 
 #page-title.page-title-parallax span { font-size: 22px; }
 
