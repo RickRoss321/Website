@@ -62,16 +62,27 @@
 					============================================= -->
 					<nav style="" id="primary-menu" class="not-dark">
 						<style type="text/css">
-						.feature-box.fbox-outline .fbox-icon {
-						border: 1px solid #0086B6;
-					}
+						#noLink:hover {
+							color: #444 !important;
+							cursor: initial;
+						}
+						.ngageMobileFloat {
+							display: none !important;
+						}
+						.liveChatFloatingButton {
+							font-family: 'Libre Baskerville', serif;
+						}
+						.liveChatFloatingButton::after {
+							display: none;
+						}
+
 						.wobble {
 								  -webkit-animation-duration: 1s;
 								  
 								  -webkit-animation-iteration-count: infinite;
 								  -webkit-animation-delay: .75s;
 								}
-							/*.noclick:hover {cursor:pointer;}*/
+								
 
 							
 							@media only screen and (max-width: 1335px) {
@@ -101,10 +112,10 @@
 									display: none !important;
 								}
 								.helpline {
-									top: -20px !important;
+									/*top: -20px !important;*/
 								}
 							}
-							@media only screen and (max-width: 1032px) {
+							@media only screen and (max-width: 1086px) {
 								.callus {
 									display: none !important;
 								}
@@ -115,6 +126,11 @@
 									display: block !important;
 								}
 
+							}
+							@media only screen and (max-width: 1021px) {
+								.phoneNumber {
+									font-size: .85rem !important;
+								}
 							}
 							@media only screen and (max-width: 994px) {
 								.feature-box > p {
@@ -132,19 +148,22 @@
 								.helpline{
 									top: 20px !important;
 									/*left:200px !important;*/
-									padding-bottom: 20px !important;
+									padding-bottom: 10px !important;
 								}
 								.helplinetext{
 									position: absolute;
 									width: 200px;
-									top:-20px;
-									left: 170px !important;
+									top:-12px;
+									left: 174px !important;
 
 								}
 
 							}
 
 							@media only screen and (max-width: 767px) {
+								.fbox-effect {
+
+								}
 								.mhide {
 									display: none !important;
 								}
@@ -155,16 +174,7 @@
 									display: none !important;
 								}
 								.mobileMenu {}
-								.feature-box {
-									/*padding-left: 20vw !important;*/
-									/*left: -30px;*/
-									}
-								.fbox-icon {
-									border: none !important;
-									/*top: -22px !important;*/
-
-									/*padding-left: 8vw !important;*/
-								}
+								
 								.callnow {
 									min-height: 20px !important;
 								}
@@ -194,29 +204,33 @@
 							}
 						</style>
 						<ul class="callnow" style="min-height: 100px;">
-							<li class=" callus"><a href="index.html" style="max-height: 100px;"><div style="font-size: 2rem;"  class="" style="">(225) 928-8800 <div style="display: inline; font-size: .7rem"> &nbsp;&nbsp;&nbsp;24/7 Legal Helpline </div>  </div></a>
+							<li class=" callus"><a href="index.html" style="max-height: 100px;"><div style="font-size: 2rem;"  class="" style="">(225) 928-8800   </div></a>
 								
 							</li>
 
 							<li style="display: none;" class=" callus2"><a href="index.html"><div class="" style="font-size: 1.8rem;">(225) 928-8800</div></a></li>
-							<li  style="display: none;" class=" callus3"><a href="index.html"><div class="" style="font-size: 1.2rem;">(225) 928-8800 </div></a>
+							<li  style="display: none;" class=" callus3"><a href="index.html"><div class="phoneNumber" style="font-size: 1.2rem;">(225) 928-8800 </div></a>
 								
 							
 
 							</li>
-							<li class="helpline"><a href="index.html" style="max-height: 30px !important; position: absolute; width: 180px; top: -10px; left: -162px; padding-bottom: 0px;"><div class="helplinetext" style=" font-size: .7rem"> (SE HABLA ESPAñOL)</div></a>
+							<li class="helpline"><a href="spanish-home.html" style="max-height: 30px !important; position: absolute; width: 180px; top: -30px; left: -168px; padding-bottom: 0px;"><div class="helplinetext" style=" font-size: .8rem"> SE HABLA ESPAñOL</div></a>
 								
 							</li>
 						</ul>
 
 						<ul style="min-height: 100px;">
 
-							<li ><a href="index.html"><div>Home</div></a>
+							<li class=""><a href="index.html"><div>Home</div></a>
+							
 								
 							</li>
-							<li><a href="about.html"><div>About</div></a>
+							<li ><a href="about.html"><div>About</div></a>
 								<ul>
-									<li><a href="team.html"><div><i class="icon-stack"></i>Team</div></a>
+									<li><a href="about.html"><div><i class="icon-clipboard"></i>About Us</div></a>
+										
+									</li>
+									<li><a href="team.html"><div><i class="icon-users"></i>Team</div></a>
 										
 									</li>
 									
@@ -225,48 +239,54 @@
 							<li class="mega-menu current"><a href="#" data-scrollto="#content" data-offset="100"><div>Practice Areas</div></a>
 								<div class="mega-menu-content style-2 clearfix">
 									<ul class="mega-menu-column col-lg-4">
-										<li class="mega-menu-title"><a href="#"><div>Motor Vehicle Accidents</div></a>
+										<li class="mega-menu-title"><a href="automotive-accidents.html"><div>Motor Vehicle Accidents</div></a>
 											<ul>
-												<li><a href="carAccidents.html"><div>Car Accidents</div></a></li>
-												<li><a href="motorcycleAccidents.html"><div>Motorcycle Accidents</div></a></li>
-												<li><a href="truckAccidents.html"><div>Truck Accidents</div></a></li>
+												<li><a href="car-accidents.html"><div>Car Accidents</div></a></li>
+												<li><a href="motorcycle-accidents.html"><div>Motorcycle Accidents</div></a></li>
+												<li><a href="truck-accidents.html"><div>Truck Accidents</div></a></li>
 											</ul>
 										</li>
-										<li class="mega-menu-title"><a href="maritimeAccidents.html"><div>Maritime Cases</div></a>
+										<li class="mega-menu-title"><a href="#!" id="noLink"><div>Dangerous Drugs &amp; Defective Devices</div></a>
 											<ul>
-												<li><a href="maritimeAccidents.html"><div>Offshore/Maritime Accidents </div></a></li>
-												<li><a href="boatingAccidents.html"><div>Boating Accidents</div></a></li>
+												<li><a href="defective-products.html"><div>Defective Products</div></a></li>
+												<li><a href="defective-drugs.html"><div>Dangerous Drugs</div></a></li>
+												<li><a href="xarelto.html"><div>Xarelto </div></a></li>
+												<li><a href="hernia-mesh.html"><div>Hernia Mesh </div></a></li>
+												<li><a href="ivc-filters.html"><div>IVC Filter</div></a></li>
+												<li><a href="vaginal-mesh.html"><div>Vaginal Mesh</div></a></li>
 											</ul>
 										</li>
+										
 									</ul>
 									<ul class="mega-menu-column col-lg-4">
 										<li class="mega-menu-title"><a href="mesothelioma.html"><div>Mesothelioma</div></a>
 											<ul>
-												<li><a href="blog-masonry.html"><div>Asbestosis</div></a></li>
-												<li><a href="blog-masonry-3.html"><div>Detection and Diagnosis</div></a></li>
-												<li><a href="blog-masonry-2.html"><div>Symptoms of Mesothelioma</div></a></li>
+												<li><a href="asbestosis.html"><div>Asbestosis</div></a></li>
+												<li><a href="detection-diagnosis.html"><div>Detection &amp; Diagnosis</div></a></li>
+												<li><a href="symptoms-of-mesothelioma.html"><div>Symptoms of Mesothelioma</div></a></li>
 											</ul>
 										</li>
-										<li class="mega-menu-title"><div style="color: #777;">
-										<h5 style="color:#444;    font-family: 'Open Sans', sans-serif; font-size: 13px !important;" class="nobottompadding nobottommargin">DANGEROUS DRUGS/DEFECTIVE DEVICES</h5></div>
+										<li class="mega-menu-title"><a href="maritime-accidents.html"><div>Maritime Cases</div></a>
 											<ul>
-												<li><a href="defectiveProducts.html"><div>Defective Products</div></a></li>
-												<li><a href="defectiveDrugs.html"><div>Dangerous Drugs</div></a></li>
-												<li><a href="blog-grid-2.html"><div>Xarelto </div></a></li>
-												<li><a href="blog-grid-2.html"><div>Hernia Mesh </div></a></li>
+												<li><a href="maritime-accidents.html"><div>Offshore &amp; Maritime Accidents </div></a></li>
+												<li><a href="oil-platform-injuries.html"><div>Oil Platform Injuries</div></a></li>
+												<li><a href="jones-act.html"><div>Jones Act Claims</div></a></li>
+												<li><a href="boating-accidents.html"><div>Boating Accidents</div></a></li>
 											</ul>
 										</li>
+										
 									</ul>
 									<ul class="mega-menu-column col-lg-4">
-										<li class="mega-menu-title"><a href="personalInjury.html"><div>Personal Injury</div></a>
+										<li class="mega-menu-title"><a href="personal-injury.html"><div>Personal Injury</div></a>
 											<ul>
-												<li><a href="classActionMassTort.html"><div>Class Action &amp; Mass Tort</div></a></li>
-												<li><a href="pedestrianAccidents.html"><div>Pedestrian Accidents</div></a></li>
-												<li><a href="premisesLiability.html"><div>Premises Liability</div></a></li>
-												<li><a href="malpractice.html"><div>Medical Malpractice</div></a></li>
-												<li><a href="constructionAccidents.html"><div>Construction Accidents</div></a></li>
-												<li><a href="socialSecurity.html"><div>Social Security/Disability</div></a></li>
-												<li><a href="wrongfulDeath.html"><div>Wrongful Death</div></a></li>
+												<li><a href="class-action-mass-tort.html"><div>Class Action &amp; Mass Tort</div></a></li>
+												<li><a href="pedestrian-accidents.html"><div>Pedestrian Accidents</div></a></li>
+												<li><a href="premises-liability.html"><div>Premises Liability</div></a></li>
+												<li><a href="medical-malpractice.html"><div>Medical Malpractice</div></a></li>
+												<li><a href="construction-accidents.html"><div>Construction Accidents</div></a></li>
+												<li><a href="social-security.html"><div>Social Security/Disability</div></a></li>
+												<li><a href="workers-compensation.html"><div>Workers' Compensation</div></a></li>
+												<li><a href="wrongful-death.html"><div>Wrongful Death</div></a></li>
 											</ul>
 										</li>
 										
@@ -278,6 +298,93 @@
 							<!-- <li class="mega-menu"><a href="blog.html"><div>Blog</div></a> -->
 								
 							</li>
+							<li class="mega-menu" onmouseenter="playYoutube()"><a href="testimonials.html"><div >Testimonials</div></a>
+								<div class="mega-menu-content style-2 clearfix">
+									<ul class="mega-menu-column col-lg-7">
+										<li>
+											<div class="widget clearfix">
+
+												<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/fTPm87ZX0ls?rel=0?enablejsapi=1?cc_load_policy=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+												<!-- <p class="topmargin-sm nobottommargin">Fully Widgetized Mega Menus with the Ability to add Multiple Mixed Columns and Variable Content. You can use Images, Videos, Embedded Maps or Carousels along with Fully Functional Forms.</p> -->
+
+											</div>
+										</li>
+									</ul>
+									
+
+									<ul class="mega-menu-column col-lg-5">
+										<li>
+											<div class="widget clearfix">
+
+												<h4 style="color:#555">Client Testimonials</h4>
+
+												<div>
+													<div class="spost clearfix">
+														<div class="entry-image">
+															<a href="#!" onclick="changeYoutubeVideo('6kfubE3vgoI');" class="nobg"><img class="rounded-circle" src="images/roderick.jpg" alt=""></a>
+														</div>
+														<div class="entry-c">
+															<div class="entry-title">
+																<h4 ><a href="#!" style="color:#555" onclick="changeYoutubeVideo('6kfubE3vgoI');">"He just made me feel so welcome, and assuring me that he was going to get everything taken care of."</a></h4>
+															</div>
+															<ul class="entry-meta">
+																<li><i class="icon-comments-alt"></i> Roderick H</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="spost clearfix">
+														<div class="entry-image">
+															<a href="#!" onclick="changeYoutubeVideo('fTPm87ZX0ls');" class="nobg"><img class="rounded-circle" src="images/connie.jpg" alt=""></a>
+														</div>
+														<div class="entry-c">
+															<div class="entry-title">
+																<h4><a href="#!" onclick="changeYoutubeVideo('fTPm87ZX0ls');" style="color:#555">“I was treated with the utmost respect, Peyton Murphy has respect for every one of his clients.”</a></h4>
+															</div>
+															<ul class="entry-meta">
+																<li><i class="icon-comments-alt"></i> Connie M</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="spost clearfix">
+														<div class="entry-image">
+															<a href="#!" onclick="changeYoutubeVideo('6Wn9yuulc6k');" class="nobg"><img class="rounded-circle" src="images/linda.jpg" alt=""></a>
+														</div>
+														<div class="entry-c">
+															<div class="entry-title">
+																<h4><a href="#!" onclick="changeYoutubeVideo('6Wn9yuulc6k');" style="color:#555">"He took care of everything and I really trust Peyton."</a></h4>
+															</div>
+															<ul class="entry-meta">
+																<li><i class="icon-comments-alt"></i> Linda G</li>
+															</ul>
+														</div>
+													</div>
+													<div class="spost clearfix">
+														<div class="entry-image">
+															<a href="#!" onclick="changeYoutubeVideo('IS4XF7Vk_Wk');" class="nobg"><img class="rounded-circle" src="images/worner.jpg" alt=""></a>
+														</div>
+														<div class="entry-c">
+															<div class="entry-title">
+																<h4><a href="#!" onclick="changeYoutubeVideo('IS4XF7Vk_Wk');" style="color:#555">"Peyton Murphy is very knowledgeable, he’s concerned about the outcome for his client, and also, he’s about business when he walks in the courtroom."</a></h4>
+															</div>
+															<ul class="entry-meta">
+																<li><i class="icon-comments-alt"></i> Worner C</li>
+															</ul>
+														</div>
+													</div>
+
+												</div>
+												<div class="col_full">
+															<a class="button button-3d button-small nobottommargin button-reveal tright topmargin-sm" href="testimonials.html"><i class="icon-angle-right" ></i><span style="color: white;">See all testimonials</span></a>
+														</div>
+
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
 							<li class="mega-menu"><a href="contact.html"><div>Contact</div></a>
 								<div class="mega-menu-content style-2 clearfix">
 									<ul class="mega-menu-column col-lg-3">
@@ -287,8 +394,7 @@
 												<h4 style="color:#555" >Our Location</h4>
 												<div id="goomap" style="margin: auto; width:100%;height:240px;background:yellow"></div>
 
-												<!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Murphy Law Firm&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.crocothemes.net"></a><style>.mapouter{overflow:hidden;height:200px;width:300px;}.gmap_canvas {background:none!important;height:200px;width:300px;}</style></div>
- -->
+												
 											</div>
 										</li>
 									</ul>
@@ -807,6 +913,24 @@ function callMaps(){
 	myMap2();
 	
 
+}
+
+function playYoutube(){
+	if(0==0){
+		$("#video")[0].src += "&mute=1&autoplay=1";
+		// ev.preventDefault();
+	console.log("tried to play youtube");
+	x=1;
+	}
+	
+}
+
+function changeYoutubeVideo(videoID){
+	$("#video")[0].src = "https://www.youtube.com/embed/";
+	$("#video")[0].src += videoID;
+
+	$("#video")[0].src += "?rel=0?enablejsapi=1&mute=1&autoplay=1";
+	console.log("tried to change youtube");
 }
 
 </script>
