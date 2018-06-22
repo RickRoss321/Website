@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="SemiColonWeb" />
+	<meta name="author" content="Dylan Blanchard" />
+	<meta property="og:image" content="http://murphylawfirm.com/Image01.jpg" />
+	<meta property="og:image:url" content="http://murphylawfirm.com/Image01.jpg" />
+	<meta property="og:image:secure_url" content="https://murphylawfirm.com/Image01.jpg" /> 
+	<meta property="og:image:type" content="image/jpeg" /> 
+	<meta property="og:image:width" content="800" /> 
+	<meta property="og:image:height" content="600" />
+
 
 	<!-- Stylesheets
 	============================================= -->
@@ -877,7 +886,7 @@ h3 > a {color: black;}
 
 					<div class="container clearfix">
 
-						<div class="heading-block center">
+						<div id="testimonialsSection" class="heading-block center">
 							<h3>Testimonials</h3>
 							<span>Check out what real clients have to say about Murphy Law Firm</span>
 						</div>
@@ -933,7 +942,7 @@ h3 > a {color: black;}
 													</div>
 													<div class="spost clearfix">
 														<div class="entry-image">
-															<a href="#!" onclick="changeYoutubeVideo2('IS4XF7Vk_Wk');" class="nobg"><img class="rounded-circle" src="images/worner.jpg" alt=""></a>
+															<a href="#!"  onclick="changeYoutubeVideo2('IS4XF7Vk_Wk');" class="nobg"><img class="rounded-circle" src="images/worner.jpg" alt=""></a>
 														</div>
 														<div class="entry-c">
 															<div class="entry-title">
@@ -1060,7 +1069,7 @@ h3 > a {color: black;}
 						<div class="col_full nobottommargin">
 							
 
-							<div id="oc-posts" class="owl-carousel posts-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="true" data-items-xs="2" data-items-xl="4">
+							<div id="oc-posts" class="owl-carousel posts-carousel carousel-widget" data-loop="true" data-margin="20" data-nav="true" data-pagi="true" data-items-xs="2" data-items-xl="4"  data-autoplayTimeout="2">
 
 								<div class="oc-item">
 									<div class="team">
@@ -1115,11 +1124,7 @@ h3 > a {color: black;}
 						<div id="instagram" class="widget clearfix">
 							<script type="text/javascript">
 								window.onload = function() {addInsta();
-								document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.sendForm('contact_service', 'contact_template', this);
-            });}; 
+								}; 
 								function addInsta() {
 									console.log("ran that ish");
 									$("#instagram").html("<h4 class='highlight-me'>Instagram Photos</h4><div id='instagram-photos' class='instagram-photos masonry-thumbs grid-4' data-user='5963538953' data-count='12' data-type='user'></div>");
