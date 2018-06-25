@@ -313,7 +313,7 @@
 										<li>
 											<div class="widget clearfix">
 
-												<h4 style="color:#555">Client Testimonials</h4>
+												<h4 class="headerDesc" style="color:#555">Client Testimonials</h4>
 
 												<div>
 													<div class="spost clearfix">
@@ -322,7 +322,7 @@
 														</div>
 														<div class="entry-c">
 															<div class="entry-title">
-																<h4 ><a href="#!" style="color:#555" onclick="changeYoutubeVideo('6kfubE3vgoI');">"He just made me feel so welcome, and assuring me that he was going to get everything taken care of."</a></h4>
+																<h4 ><a href="#!" class="headerDesc" style="color:#555" onclick="changeYoutubeVideo('6kfubE3vgoI');">"He just made me feel so welcome, and assuring me that he was going to get everything taken care of."</a></h4>
 															</div>
 															<ul class="entry-meta">
 																<li><i class="icon-comments-alt"></i> Roderick H</li>
@@ -336,7 +336,7 @@
 														</div>
 														<div class="entry-c">
 															<div class="entry-title">
-																<h4><a href="#!" onclick="changeYoutubeVideo('fTPm87ZX0ls');" style="color:#555">“I was treated with the utmost respect, Peyton Murphy has respect for every one of his clients.”</a></h4>
+																<h4><a href="#!" class="headerDesc" onclick="changeYoutubeVideo('fTPm87ZX0ls');" style="color:#555">“I was treated with the utmost respect, Peyton Murphy has respect for every one of his clients.”</a></h4>
 															</div>
 															<ul class="entry-meta">
 																<li><i class="icon-comments-alt"></i> Connie M</li>
@@ -350,7 +350,7 @@
 														</div>
 														<div class="entry-c">
 															<div class="entry-title">
-																<h4><a href="#!" onclick="changeYoutubeVideo('6Wn9yuulc6k');" style="color:#555">"He took care of everything and I really trust Peyton."</a></h4>
+																<h4><a href="#!" class="headerDesc" onclick="changeYoutubeVideo('6Wn9yuulc6k');" style="color:#555">"He took care of everything and I really trust Peyton."</a></h4>
 															</div>
 															<ul class="entry-meta">
 																<li><i class="icon-comments-alt"></i> Linda G</li>
@@ -363,7 +363,7 @@
 														</div>
 														<div class="entry-c">
 															<div class="entry-title">
-																<h4><a href="#!" onclick="changeYoutubeVideo('IS4XF7Vk_Wk');" style="color:#555">"Peyton Murphy is very knowledgeable, he’s concerned about the outcome for his client, and also, he’s about business when he walks in the courtroom."</a></h4>
+																<h4><a href="#!" class="headerDesc" onclick="changeYoutubeVideo('IS4XF7Vk_Wk');" style="color:#555">"Peyton Murphy is very knowledgeable, he’s concerned about the outcome for his client, and also, he’s about business when he walks in the courtroom."</a></h4>
 															</div>
 															<ul class="entry-meta">
 																<li><i class="icon-comments-alt"></i> Worner C</li>
@@ -398,7 +398,7 @@
 										<li>
 											<div style="color:#555"  class="widget clearfix">
 
-												<h4 style="color:#555" >Send us a Quick Email</h4>
+												<h4 style="color:#555" class="headerDesc">Send us a Quick Email</h4>
 
 												<div class="contact-widget" data-loader="button">
 													<div class="contact-form-result"></div>
@@ -442,20 +442,20 @@
 									</ul>
 									<ul class="mega-menu-column col-lg-3">
 										<li>
-											<div style="color:#555" class="widget clearfix">
+											<div style="color:#555" class="widget clearfix" class="headerDesc">
 
-												<h4 style="color:#555">Our Headquarters</h4>
+												<h4 style="color:#555" class="headerDesc">Our Headquarters</h4>
 
-												<address>
+												<address class="headerDesc">
 													<strong>Murphy Law Firm</strong><br>
 													2354 S Acadian Thruway<br>
 													Baton Rouge, Louisiana 70802<br>
 
 												</address>
 
-												<abbr title="Phone Number"><strong> <i class="icon-phone"></i> Phone:</strong></abbr> (225) 928-8800<br>
-												<abbr title="Email Address"><strong><i class="icon-envelope2"></i> Email:</strong></abbr> info@murphylawfirm.com <br> 
-												<abbr title="Hours"><strong><i class="icon-time "></i> Mon-Fri:</strong></abbr> 8AM - 5PM
+												<abbr title="Phone Number" class="headerDesc"><strong > <i class="icon-phone"></i> Phone:</strong> (225) 928-8800</abbr><br>
+												<abbr title="Email Address" class="headerDesc"><strong><i class="icon-envelope2"></i> Email:</strong> info@murphylawfirm.com</abbr> <br> 
+												<abbr title="Hours" class="headerDesc"><strong><i class="icon-time "></i> Mon-Fri:</strong> 8AM - 5PM</abbr>
 
 
 												<div class="bottommargin-sm"></div>
@@ -952,6 +952,8 @@
                 while (video.firstChild) {
                     video.removeChild(video.firstChild);
                 }
+                $('.headerDesc').css("color", "#FFF");
+
             }
 
             // Add source tags if not already present

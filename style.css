@@ -93,6 +93,20 @@
 .helplinetext {
 	width: 400px;
 }
+.callus2 {
+	font-size: 1.6rem !important;
+}
+.callus3 {
+	font-size: 1.1rem !important;
+}
+
+
+
+@media only screen and (max-width: 1040px) {
+								.phoneNumber {
+									font-size: .7rem !important;
+								}
+							}
 
 
 /* ----------------------------------------------------------------
