@@ -8,8 +8,8 @@ require 'phpmailer/src/SMTP.php';
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'db10101@gmail.com', // Your Email Address
-				'name' => 'Dylan Blanchard' // Your Name
+				'email' => 'murphylawfirmllc@gmail.com', // Your Email Address
+				'name' => 'Peyton Murphy' // Your Name
 			);
 
 // Form Processing Messages
