@@ -66,8 +66,21 @@
 						.ngageMobileFloat {
 							display: none !important;
 						}
+						@keyframes example {
+			   			 0%   {left: -125px;}
+			   			 100% {left: -87px;}
+						}
 						.liveChatFloatingButton {
 							font-family: 'Libre Baskerville', serif;
+							width: 224px;
+							left: -145px;
+							    font-weight: 200;
+							    background-color: rgba(205, 205, 205, .60);
+							    animation-name: example;
+							    animation-delay: 2.15s;
+							    animation-duration: .75s;
+							    animation-timing-function: ease;
+							    animation-fill-mode: forwards;
 						}
 						.liveChatFloatingButton::after {
 							display: none;
@@ -926,6 +939,10 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+	
+	<script src="ilnksrvr.js"></script>
+	<script src="GlobalScript.js"></script>
+	<script src="js/customNgageLibrary.js"></script>
 
 <script type="text/javascript">
 

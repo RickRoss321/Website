@@ -89,6 +89,20 @@
 
 ---------------------------------------------------------------- */
 
+.grid-border [class^=col-] {
+	margin: -1px 0 0 -1px;
+	padding: 30px;
+	border: 1px solid #EEE;
+}
+
+.grid-border [class^=col-]:hover {
+	background-color: rgba(241,128,82,0.1);
+	border-color: #F18052;
+	z-index: 1;
+}
+
+
+
 
 .helplinetext {
 	width: 400px;
